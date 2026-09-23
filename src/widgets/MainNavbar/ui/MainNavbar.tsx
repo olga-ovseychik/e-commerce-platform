@@ -14,12 +14,12 @@ export function MainNavbar() {
         <img src={logo} alt='Logo' className='h-10'/>
       </Link>
       <div className='relative w-2/3'>
-        <button className='absolute right-1 top-1/8 bg-emerald-500 p-2 rounded-md flex gap-1 flex-row items-center cursor-pointer'>
+        <button data-testid='search-button' className='absolute right-1 top-1/8 bg-emerald-500 p-2 rounded-md flex gap-1 flex-row items-center cursor-pointer'>
           <FontAwesomeIcon icon={faMagnifyingGlass} className='text-gray-50' size='lg'/>
           {showSearchText && <span className='text-gray-50 font-medium pr-1 text-sm'>Search</span>}
         </button>
         <input
-          data-testid="search"
+          data-testid="search-input"
           placeholder='Search product'
           onFocus={() => setShowSearchText(true)}
           onBlur={() => setShowSearchText(false)}

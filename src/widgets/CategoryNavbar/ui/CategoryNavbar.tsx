@@ -8,7 +8,7 @@ export function CategoryNavbar() {
     <nav data-testid='category-navbar' className='border-b border-gray-200 mb-10 flex flex-row p-5'>
       <div className='hover:bg-gray-50 p-2 rounded-md flex items-center gap-0.5'>
         <FontAwesomeIcon icon={faBars} className='text-emerald-500 cursor-pointer' size='lg'/>
-        <select data-testid='category' defaultValue='All categories'
+        <select data-testid='category-select' defaultValue='All categories'
           className='text-gray-600 text-sm font-semibold cursor-pointer focus:outline-none'
         >
           <option value="">All categories</option>
